@@ -1,0 +1,31 @@
+{
+    "users":[
+        {
+            "id": 1,
+            "name": "Peaches",
+            "email": "peaches@peaches.com",
+            "password": "peaches"
+        },
+        {
+            "id": 2,
+            "name": "Naomi",
+            "email": "naomi@naomi.com",
+            "password": "naomi"
+        }
+    ],
+
+    "moodTrackers": [
+        {
+            "id": 1,
+            "feeling": "happy",
+            "yourWhy": "My children",
+            "userId": 1
+        },
+        {
+            "id": 2,
+            "feeling": "sad",
+            "yourWhy": "To help others",
+            "userId": 2
+        }
+    ]
+}
