@@ -4,7 +4,7 @@ import "./MoodTracker.css"
 import { useHistory } from 'react-router-dom'
 
 export const MoodTrackerForm = () => {
-    const { addMoodTracker } = useContext(MoodTrackerContext)
+    const { addMoodTracker, getMoodTrackers } = useContext(MoodTrackerContext)
 
 
 
@@ -16,9 +16,9 @@ export const MoodTrackerForm = () => {
 
     const history = useHistory();
 
-    // useEffect(() => {
-    //     getMoodTrackerById()
-    // }, [])
+    useEffect(() => {
+        getMoodTrackers()
+    }, [])
 
     const handleControlledInputChange = (event) => {
         const newMoodTracker = { ...moodTracker }
@@ -65,16 +65,20 @@ export const MoodTrackerForm = () => {
             <fieldset>
             <div className="form-group">
                 <label htmlFor="name">How do I feel today?</label>
-                <input type="text" id="feels" required autoFocus className="form-control" placeholder="How do I feel today?" value={moodTracker.feeling} onChange={handleControlledInputChange} />
+                <input type="text" id="feeling" required autoFocus className="form-control" placeholder="How do I feel today?" value={moodTracker.feeling} onChange={handleControlledInputChange} />
             </div>
             </fieldset>        
                   
                   <fieldset>
                       <div className="form-group">
                         <label htmlFor="name">What's My Why?</label>
-                        <input type="text" id="why" required autoFocus className="form-control" placeholder="What's My Why?" value={moodTracker.yourWhy} onChange={handleControlledInputChange} />
+                        <input type="text" id="yourWhy" required autoFocus className="form-control" placeholder="What's My Why?" value={moodTracker.yourWhy} onChange={handleControlledInputChange} />
                       </div>
                   </fieldset>
+
+                  <button className="btn btn-primary" onClick={handleClickSaveMoodTracker}>
+                      Save Mood
+                  </button>
 
                 
         </form>

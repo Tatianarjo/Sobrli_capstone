@@ -1,31 +1,42 @@
 {
-    "users":[
-        {
-            "id": 1,
-            "name": "Peaches",
-            "email": "peaches@peaches.com",
-            "password": "peaches"
-        },
-        {
-            "id": 2,
-            "name": "Naomi",
-            "email": "naomi@naomi.com",
-            "password": "naomi"
-        }
-    ],
-
-    "moodTrackers": [
-        {
-            "id": 1,
-            "feeling": "happy",
-            "yourWhy": "My children",
-            "userId": 1
-        },
-        {
-            "id": 2,
-            "feeling": "sad",
-            "yourWhy": "To help others",
-            "userId": 2
-        }
-    ]
+  "users": [
+    {
+      "id": 1,
+      "name": "Peaches",
+      "email": "peaches@peaches.com",
+      "password": "peaches"
+    },
+    {
+      "id": 2,
+      "name": "Naomi",
+      "email": "naomi@naomi.com",
+      "password": "naomi"
+    }
+  ],
+  "moodTrackers": [
+    {
+      "id": 1,
+      "feeling": "happy",
+      "yourWhy": "My children",
+      "userId": 1
+    },
+    {
+      "id": 2,
+      "feeling": "sad",
+      "yourWhy": "To help others",
+      "userId": 2
+    },
+    {
+      "feeling": "hkkhk",
+      "yourWhy": "ljlkj",
+      "userId": 0,
+      "id": 3
+    },
+    {
+      "feeling": "Today was great I was able to go swimming and rollerblading",
+      "yourWhy": "To live a purpose driven life!",
+      "userId": 0,
+      "id": 4
+    }
+  ]
 }
