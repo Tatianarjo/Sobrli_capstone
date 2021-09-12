@@ -11,6 +11,11 @@
       "name": "Naomi",
       "email": "naomi@naomi.com",
       "password": "naomi"
+    },
+    {
+      "email": "anthony@anthony.com",
+      "name": "Anthony M",
+      "id": 3
     }
   ],
   "moodTrackers": [
@@ -37,6 +42,12 @@
       "yourWhy": "To live a purpose driven life!",
       "userId": 0,
       "id": 4
+    },
+    {
+      "feeling": "I won't to pack up my house to get ready to move but hey, it's sunday!",
+      "yourWhy": "To keep moving",
+      "userId": 0,
+      "id": 5
     }
   ]
 }
