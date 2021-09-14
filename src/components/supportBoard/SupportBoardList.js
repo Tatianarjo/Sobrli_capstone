@@ -29,6 +29,9 @@ export const SupportBoardList = () => {
         supportBoards.map(supportBoard => {
           return (
             <div className="supportBoard" id={`supportBoard--${supportBoard.id}`}>
+                  <div className="supportBoard__title">
+                Title: { supportBoard.title }
+              </div>
               <div className="supportBoard__message">
                 Enter Message Here: { supportBoard.message }
               </div>

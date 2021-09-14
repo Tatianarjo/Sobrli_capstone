@@ -6,6 +6,7 @@ import { MoodTrackerForm } from "./moodTracker/MoodTrackerForm"
 import { MoodTrackerProvider } from "./moodTracker/MoodTrackerProvider"
 import { SupportBoard } from "./supportBoard/SupportBoard"
 import { SupportBoardList } from "./supportBoard/SupportBoardList"
+import { SupportBoardForm } from "./supportBoard/SupportBoardForm"
 import { SupportBoardProvider } from "./supportBoard/SupportBoardProvider"
 
 
@@ -31,6 +32,9 @@ export const ApplicationViews = () => {
                 <SupportBoardProvider>
                     <Route exact path="/supports">
                         <SupportBoardList />
+                    </Route>
+                    <Route exact path="/supports/create">
+                        <SupportBoardForm />
                     </Route>
                 </SupportBoardProvider>
 
