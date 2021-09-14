@@ -4,6 +4,10 @@ import { MoodTracker } from "./moodTracker/MoodTracker"
 import { MoodTrackerList } from "./moodTracker/MoodTrackerList"
 import { MoodTrackerForm } from "./moodTracker/MoodTrackerForm"
 import { MoodTrackerProvider } from "./moodTracker/MoodTrackerProvider"
+import { SupportBoard } from "./supportBoard/SupportBoard"
+import { SupportBoardList } from "./supportBoard/SupportBoardList"
+import { SupportBoardProvider } from "./supportBoard/SupportBoardProvider"
+
 
 export const ApplicationViews = () => {
     return (
@@ -12,6 +16,7 @@ export const ApplicationViews = () => {
             {/* // <moodTrackerProvider> */}
                 <Route exact path="/">
                     <MoodTracker />
+                    <SupportBoard />
                 </Route>
 
                 <MoodTrackerProvider>
@@ -22,7 +27,15 @@ export const ApplicationViews = () => {
                         <MoodTrackerForm />
                     </Route>
                 </MoodTrackerProvider>
-            {/* // </moodTrackerProvider> */}
+
+                <SupportBoardProvider>
+                    <Route exact path="/supports">
+                        <SupportBoardList />
+                    </Route>
+                </SupportBoardProvider>
+
+                
+           
 
             {/* Render the animal list when http://localhost:3000/animals */}
             
