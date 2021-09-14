@@ -31,7 +31,7 @@ export const MoodTrackerForm = () => {
     const handleClickSaveMoodTracker = (event) => {
         event.preventDefault()
 
-        const userId = parseInt(moodTracker.userId)
+        const userId = parseInt(localStorage.getItem("sobrli_user"))
 
         if (moodTracker.feeling === "" || moodTracker.yourWhy ==="") {
             window.alert("Please enter information")

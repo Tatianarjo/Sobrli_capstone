@@ -3,19 +3,22 @@
     {
       "id": 1,
       "name": "Peaches",
-      "email": "peaches@peaches.com",
-      "password": "peaches"
+      "email": "peaches@peaches.com"
     },
     {
       "id": 2,
       "name": "Naomi",
-      "email": "naomi@naomi.com",
-      "password": "naomi"
+      "email": "naomi@naomi.com"
     },
     {
       "email": "anthony@anthony.com",
       "name": "Anthony M",
       "id": 3
+    },
+    {
+      "email": "dasha@dasha.com",
+      "name": "Dasha Dasha",
+      "id": 4
     }
   ],
   "moodTrackers": [
@@ -48,6 +51,42 @@
       "yourWhy": "To keep moving",
       "userId": 0,
       "id": 5
+    },
+    {
+      "feeling": "feeling",
+      "yourWhy": "because",
+      "userId": 0,
+      "id": 6
+    },
+    {
+      "feeling": "Dasha's mood",
+      "yourWhy": "because",
+      "userId": 0,
+      "id": 7
+    },
+    {
+      "feeling": "trying to save information with the correct user",
+      "yourWhy": "because I want it to work",
+      "userId": 3,
+      "id": 8
+    },
+    {
+      "feeling": "logged in as Anthony",
+      "yourWhy": "to be great",
+      "userId": 3,
+      "id": 9
+    }
+  ],
+  "supports": [
+    {
+      "id": 1,
+      "userId": 2,
+      "message": "No matter what you got this and I am here for you, always!"
+    },
+    {
+      "id": 2,
+      "userId": 3,
+      "message": "You're proactive and you inspire others around you to keep on moving!"
     }
   ]
 }
