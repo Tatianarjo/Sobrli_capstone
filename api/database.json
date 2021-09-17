@@ -95,6 +95,19 @@
       "title": "You are Needed",
       "userId": 3,
       "id": 3
+    },
+    {
+      "message": "Thank you for always being you and being here ",
+      "title": "Happy You're Here",
+      "userId": 3,
+      "id": 4
+    }
+  ],
+  "motivations": [
+    {
+      "id": 1,
+      "userId": 2,
+      "quote": "You are wonderful!"
     }
   ]
 }

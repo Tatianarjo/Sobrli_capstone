@@ -1,7 +1,7 @@
 import React, { useContext, useEffect } from "react"
 import { SupportBoardContext } from "./SupportBoardProvider"
 import "./SupportBoard.css"
-import { useHistory } from 'react-router-dom'
+import { useHistory, Link } from 'react-router-dom'
 
 export const SupportBoardList = () => {
 
@@ -11,7 +11,7 @@ export const SupportBoardList = () => {
 
   //useEffect - reach out to the world for something
   useEffect(() => {
-    console.log("SupportBoardList: useEffect - getMoodTrackers")
+    console.log("SupportBoardList: useEffect - getSupportBoards")
     getSupportBoards()
   }, [])
 
@@ -24,22 +24,18 @@ export const SupportBoardList = () => {
       }>
           Show Your Support
       </button>
-    <div className="supportBoards">
+    <section className="supportBoards">
       {
         supportBoards.map(supportBoard => {
           return (
-            <div className="supportBoard" id={`supportBoard--${supportBoard.id}`}>
-                  <div className="supportBoard__title">
-                Title: { supportBoard.title }
-              </div>
-              <div className="supportBoard__message">
-                Enter Message Here: { supportBoard.message }
-              </div>
-            </div>
+            <div className="supportBoard">
+                 <Link to={`/supports/detail/${supportBoard.id}`} key={supportBoard.id}>{supportBoard.title}</Link>
+                </div>
           )
         })
       }
-    </div>
+    </section>
     </>
   )
     }
+

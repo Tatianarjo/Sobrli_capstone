@@ -7,7 +7,9 @@ import { MoodTrackerProvider } from "./moodTracker/MoodTrackerProvider"
 import { SupportBoard } from "./supportBoard/SupportBoard"
 import { SupportBoardList } from "./supportBoard/SupportBoardList"
 import { SupportBoardForm } from "./supportBoard/SupportBoardForm"
+import { SupportBoardDetail } from "./supportBoard/SupportBoardDetail"
 import { SupportBoardProvider } from "./supportBoard/SupportBoardProvider"
+import { Home } from "./home/Home"
 
 
 export const ApplicationViews = () => {
@@ -16,8 +18,9 @@ export const ApplicationViews = () => {
             {/* Render the location list when http://localhost:3000/ */}
             {/* // <moodTrackerProvider> */}
                 <Route exact path="/">
-                    <MoodTracker />
-                    <SupportBoard />
+                    <Home />
+                    {/* <MoodTracker />
+                    <SupportBoard /> */}
                 </Route>
 
                 <MoodTrackerProvider>
@@ -35,6 +38,9 @@ export const ApplicationViews = () => {
                     </Route>
                     <Route exact path="/supports/create">
                         <SupportBoardForm />
+                    </Route>
+                    <Route exact path="/supports/detail/:supportBoardId(\d+">
+                        <SupportBoardDetail />
                     </Route>
                 </SupportBoardProvider>
 
