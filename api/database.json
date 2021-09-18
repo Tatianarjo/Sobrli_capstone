@@ -3,22 +3,26 @@
     {
       "id": 1,
       "name": "Peaches",
-      "email": "peaches@peaches.com"
+      "email": "peaches@peaches.com",
+      "password": "peaches"
     },
     {
       "id": 2,
       "name": "Naomi",
-      "email": "naomi@naomi.com"
+      "email": "naomi@naomi.com",
+      "password": "naomi"
     },
     {
       "email": "anthony@anthony.com",
       "name": "Anthony M",
-      "id": 3
+      "id": 3,
+      "password": "anthony"
     },
     {
       "email": "dasha@dasha.com",
       "name": "Dasha Dasha",
-      "id": 4
+      "id": 4,
+      "password": "dasha"
     }
   ],
   "moodTrackers": [
@@ -26,23 +30,27 @@
       "id": 1,
       "feeling": "happy",
       "yourWhy": "My children",
+      "date": "August 1, 2021",
       "userId": 1
     },
     {
       "id": 2,
       "feeling": "sad",
       "yourWhy": "To help others",
+      "date": "August 5, 2021",
       "userId": 2
     },
     {
       "feeling": "hkkhk",
       "yourWhy": "ljlkj",
+      "date": "August 2, 2021",
       "userId": 0,
       "id": 3
     },
     {
       "feeling": "Today was great I was able to go swimming and rollerblading",
       "yourWhy": "To live a purpose driven life!",
+      "date": "August 10, 2021",
       "userId": 0,
       "id": 4
     },
@@ -50,31 +58,50 @@
       "feeling": "I won't to pack up my house to get ready to move but hey, it's sunday!",
       "yourWhy": "To keep moving",
       "userId": 0,
+      "date": "August 11, 2021",
       "id": 5
     },
     {
       "feeling": "feeling",
       "yourWhy": "because",
+      "date": "August 3, 2021",
       "userId": 0,
       "id": 6
     },
     {
       "feeling": "Dasha's mood",
       "yourWhy": "because",
+      "date": "August 7, 2021",
       "userId": 0,
       "id": 7
     },
     {
       "feeling": "trying to save information with the correct user",
       "yourWhy": "because I want it to work",
+      "date": "August 6, 2021",
       "userId": 3,
       "id": 8
     },
     {
       "feeling": "logged in as Anthony",
       "yourWhy": "to be great",
+      "date": "August 8, 2021",
       "userId": 3,
       "id": 9
+    },
+    {
+      "feeling": "lklkj",
+      "yourWhy": "lkjlkj",
+      "userId": 3,
+      "date": "9/18/2021",
+      "id": 10
+    },
+    {
+      "feeling": "I want to continue",
+      "yourWhy": "because I want to travel the world",
+      "userId": 3,
+      "date": "9/18/2021",
+      "id": 11
     }
   ],
   "supports": [
@@ -101,6 +128,24 @@
       "title": "Happy You're Here",
       "userId": 3,
       "id": 4
+    },
+    {
+      "message": "So happy to have you. Even when you aren't feeling your best, the world is greater because you're in it.",
+      "title": "Life Is Better Because You're Here",
+      "userId": 3,
+      "id": 5
+    },
+    {
+      "message": ",k",
+      "title": "jh",
+      "userId": 3,
+      "id": 6
+    },
+    {
+      "message": "happy",
+      "title": "healthy",
+      "userId": 3,
+      "id": 7
     }
   ],
   "motivations": [

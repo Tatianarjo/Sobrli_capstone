@@ -35,6 +35,9 @@ export const MoodTrackerList = () => {
               <div className="moodTracker__yourWhy">
                 Your Why: { moodTracker.yourWhy }
               </div>
+              <div className="moodTracker__date">
+                Date: { moodTracker.date }
+              </div>
             </div>
           )
         })

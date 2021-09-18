@@ -39,7 +39,7 @@ export const ApplicationViews = () => {
                     <Route exact path="/supports/create">
                         <SupportBoardForm />
                     </Route>
-                    <Route exact path="/supports/detail/:supportBoardId(\d+">
+                    <Route path="/supports/detail/:supportBoardId(\d+)">
                         <SupportBoardDetail />
                     </Route>
                 </SupportBoardProvider>

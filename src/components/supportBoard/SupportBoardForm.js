@@ -11,7 +11,8 @@ export const SupportBoardForm = () => {
     const [supportBoard, setSupportBoard] = useState({
         message: "",
         title: "",
-        userId: 0
+        userId: 0,
+
     });
 
     const history = useHistory();
@@ -40,7 +41,7 @@ export const SupportBoardForm = () => {
             const newSupportBoard = {
                 message: supportBoard.message,
                 title: supportBoard.title,
-                userId: userId
+                userId: userId,
             }
             addSupportBoard(newSupportBoard)
                 .then(() => history.push("/supports"))

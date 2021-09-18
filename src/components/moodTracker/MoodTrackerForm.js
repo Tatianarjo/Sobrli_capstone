@@ -29,6 +29,8 @@ export const MoodTrackerForm = () => {
     }
 
     const handleClickSaveMoodTracker = (event) => {
+        const timestamp = new Date().toLocaleDateString()
+
         event.preventDefault()
 
         const userId = parseInt(localStorage.getItem("sobrli_user"))
@@ -40,7 +42,8 @@ export const MoodTrackerForm = () => {
             const newMoodTracker = {
                 feeling: moodTracker.feeling,
                 yourWhy: moodTracker.yourWhy,
-                userId: userId
+                userId: userId,
+                date: timestamp
             }
             addMoodTracker(newMoodTracker)
                 .then(() => history.push("/moodTrackers"))

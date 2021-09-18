@@ -17,6 +17,12 @@ export const Register = (props) => {
             .then(user => !!user.length)
     }
 
+    // const existingUserPassword = () => {
+    //     return fetch(`http://localhost:8088/users?password=${password.current.value}`)
+    //     .then(res => res.json())
+    //     .then(user => !!user.length)
+    // }
+
     const handleRegister = (e) => {
         e.preventDefault()
 
@@ -31,7 +37,8 @@ export const Register = (props) => {
                         },
                         body: JSON.stringify({
                             email: email.current.value,
-                            name: `${firstName.current.value} ${lastName.current.value}`
+                            name: `${firstName.current.value} ${lastName.current.value}`,
+                            // password: verifyPassword.current.value
                         })
                     })
                         .then(res => res.json())
@@ -70,6 +77,9 @@ export const Register = (props) => {
                 <fieldset>
                     <label htmlFor="inputEmail"> Email address </label>
                     <input ref={email} type="email" name="email" className="form-control" placeholder="Email address" required />
+                    
+                    {/* <label htmlFor="inputPassword"> Password </label>
+                    <input ref={password} type="password" name="password" className="form-control" placeholder="Password" required /> */}
                 </fieldset>
                 <fieldset>
                     <button type="submit"> Sign in </button>
