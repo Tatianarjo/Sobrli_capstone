@@ -9,6 +9,7 @@ import { SupportBoardList } from "./supportBoard/SupportBoardList"
 import { SupportBoardForm } from "./supportBoard/SupportBoardForm"
 import { SupportBoardDetail } from "./supportBoard/SupportBoardDetail"
 import { SupportBoardProvider } from "./supportBoard/SupportBoardProvider"
+import { MotivationQuote } from "./motivationQuote/MotivationQuote"
 import { Home } from "./home/Home"
 
 
@@ -43,6 +44,10 @@ export const ApplicationViews = () => {
                         <SupportBoardDetail />
                     </Route>
                 </SupportBoardProvider>
+
+                <Route path = "/motivations">
+                    <MotivationQuote />
+                </Route>
 
                 
            
