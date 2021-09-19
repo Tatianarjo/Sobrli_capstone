@@ -13,7 +13,11 @@ export const MotivationQuote = () => {
     }, [])
     
     
-    return (<p>{quote} </p>)
+    return (<p className="quotes">{quote} </p>)
+
+    
+    
+
     
 }
 
