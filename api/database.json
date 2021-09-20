@@ -23,6 +23,11 @@
       "name": "Dasha Dasha",
       "id": 4,
       "password": "dasha"
+    },
+    {
+      "email": "aja@aja.com",
+      "name": "aja washington",
+      "id": 5
     }
   ],
   "moodTrackers": [
@@ -102,6 +107,13 @@
       "userId": 3,
       "date": "9/18/2021",
       "id": 11
+    },
+    {
+      "feeling": "I feel so optimistic about life and what I can do. I'm so proud I made it to this day",
+      "yourWhy": "To enjoy the sunshine",
+      "userId": 3,
+      "date": "9/19/2021",
+      "id": 12
     }
   ],
   "supports": [

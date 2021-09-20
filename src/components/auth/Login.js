@@ -16,12 +16,6 @@ export const Login = props => {
         .then(user => user.length ? user[0] : false)
     }
 
-    // const existingUserCheck = () => {
-    //     return fetch(`http://localhost:8088/users?password=${password.current.value}`)
-    //     .then(res => res.json())
-    //     .then(user => user.length ? user[0] : false)
-    // }
-
     const handleLogin = (e) => {
         e.preventDefault()
 

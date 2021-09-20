@@ -3,19 +3,32 @@ import "./MotivationQuote.css"
 
 export const MotivationQuote = () => {
     const [quote, setQuote] = useState("")
+//useEffect is what makes it show on the initial loading of the page
+//config is the function that's going to make the API show(quote)
+    useEffect(()=>{
+      config()
+    },[])
+  const config = () => {
 
-  const config=  {mode:"no-cors", method: "GET"}
-    useEffect(() => {
-        return fetch("http://localhost:8010/proxy/stoic-quote")
+        return fetch("http://localhost:8010/proxy/stoic-quote", {
+          method: "GET"
+        })
         .then(res => res.json())
         .then(response => {
-            setQuote (response.data.quote)})
-    }, [])
+            setQuote(response.data.quote)})
+    }
     
-    
-    return (<p className="quotes">{quote} </p>)
 
     
+    return(
+      <>
+    <p className="quotes">{quote} </p>
+
+    <button onClick={config} >New Quote</button>
+    </>
+    )
+
+ 
     
 
     

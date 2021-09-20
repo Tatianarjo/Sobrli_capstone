@@ -7,7 +7,7 @@ export const Register = (props) => {
     const firstName = useRef()
     const lastName = useRef()
     const email = useRef()
-    const verifyPassword = useRef()
+    const password = useRef()
     const conflictDialog = useRef()
     const history = useHistory()
 
@@ -78,8 +78,8 @@ export const Register = (props) => {
                     <label htmlFor="inputEmail"> Email address </label>
                     <input ref={email} type="email" name="email" className="form-control" placeholder="Email address" required />
                     
-                    {/* <label htmlFor="inputPassword"> Password </label>
-                    <input ref={password} type="password" name="password" className="form-control" placeholder="Password" required /> */}
+                    <label htmlFor="inputPassword"> Password </label>
+                    <input ref={password} type="password" name="password" className="form-control" placeholder="Password" required />
                 </fieldset>
                 <fieldset>
                     <button type="submit"> Sign in </button>
