@@ -38,6 +38,7 @@ export const Register = (props) => {
                         body: JSON.stringify({
                             email: email.current.value,
                             name: `${firstName.current.value} ${lastName.current.value}`,
+                            soberDate: null
                             // password: verifyPassword.current.value
                         })
                     })

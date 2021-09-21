@@ -10,6 +10,7 @@ import { SupportBoardForm } from "./supportBoard/SupportBoardForm"
 import { SupportBoardDetail } from "./supportBoard/SupportBoardDetail"
 import { SupportBoardProvider } from "./supportBoard/SupportBoardProvider"
 import { MotivationQuote } from "./motivationQuote/MotivationQuote"
+import { Calendar } from "./calendar/Calendar"
 import { Home } from "./home/Home"
 
 
@@ -47,6 +48,10 @@ export const ApplicationViews = () => {
 
                 <Route path = "/motivations">
                     <MotivationQuote />
+                </Route>
+
+                <Route path= "/calendars">
+                    <Calendar />
                 </Route>
 
                 

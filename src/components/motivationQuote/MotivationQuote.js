@@ -24,7 +24,7 @@ export const MotivationQuote = () => {
       <>
     <p className="quotes">{quote} </p>
 
-    <button onClick={config} >New Quote</button>
+    <button className="newButton" onClick={config} >New Quote</button>
     </>
     )
 

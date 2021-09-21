@@ -28,6 +28,12 @@
       "email": "aja@aja.com",
       "name": "aja washington",
       "id": 5
+    },
+    {
+      "email": "sydney@sydney.com",
+      "name": "Sydney Sydney",
+      "soberDate": null,
+      "id": 6
     }
   ],
   "moodTrackers": [
@@ -148,8 +154,8 @@
       "id": 5
     },
     {
-      "message": ",k",
-      "title": "jh",
+      "message": "Thank you for being you!",
+      "title": "You make me happy when skies are grey",
       "userId": 3,
       "id": 6
     },
@@ -160,11 +166,16 @@
       "id": 7
     }
   ],
-  "motivations": [
+  "calendars": [
     {
       "id": 1,
       "userId": 2,
-      "quote": "You are wonderful!"
+      "soberDate": null
+    },
+    {
+      "id": 2,
+      "userId": 3,
+      "soberDate": null
     }
   ]
 }

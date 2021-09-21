@@ -29,3 +29,20 @@ export const NavBar = (props) => {
         </ul>
     )
 }
+
+
+
+///*
+
+// const Logout = () => {
+//     sessionStorage.removeItem("trendago_user")
+//     history.push("/login")
+// }
+
+//in Navbar
+
+//  <li className="aNavLink">
+//  <Link className="" onClick={Logout}>Logout</Link>
+// </li>
+
+
