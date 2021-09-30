@@ -4,30 +4,35 @@
       "id": 1,
       "name": "Peaches",
       "email": "peaches@peaches.com",
-      "password": "peaches"
+      "password": "peaches",
+      "soberDate": ""
     },
     {
       "id": 2,
       "name": "Naomi",
       "email": "naomi@naomi.com",
-      "password": "naomi"
+      "password": "naomi",
+      "soberDate": ""
     },
     {
       "email": "anthony@anthony.com",
       "name": "Anthony M",
       "id": 3,
-      "password": "anthony"
+      "password": "anthony",
+      "soberDate": ""
     },
     {
       "email": "dasha@dasha.com",
       "name": "Dasha Dasha",
       "id": 4,
-      "password": "dasha"
+      "password": "dasha",
+      "soberDate": ""
     },
     {
       "email": "aja@aja.com",
       "name": "aja washington",
-      "id": 5
+      "id": 5,
+      "soberDate": ""
     },
     {
       "email": "sydney@sydney.com",
@@ -52,8 +57,8 @@
       "userId": 2
     },
     {
-      "feeling": "hkkhk",
-      "yourWhy": "ljlkj",
+      "feeling": "happy",
+      "yourWhy": "because",
       "date": "August 2, 2021",
       "userId": 0,
       "id": 3
@@ -120,6 +125,20 @@
       "userId": 3,
       "date": "9/19/2021",
       "id": 12
+    },
+    {
+      "feeling": "Exccited that I made it to capstone day",
+      "yourWhy": "Because I want to continue to see the sun shine",
+      "userId": 1,
+      "date": "9/25/2021",
+      "id": 13
+    },
+    {
+      "feeling": "Great and happy that capstone is done",
+      "yourWhy": "To be greater than yesterday",
+      "userId": 1,
+      "date": "9/29/2021",
+      "id": 14
     }
   ],
   "supports": [
@@ -164,18 +183,24 @@
       "title": "healthy",
       "userId": 3,
       "id": 7
+    },
+    {
+      "message": "quote",
+      "title": "Happy You're Here Again",
+      "userId": 1,
+      "id": 8
     }
   ],
   "calendars": [
     {
-      "id": 1,
-      "userId": 2,
-      "soberDate": null
+      "userId": 1,
+      "soberDate": "2021-09-01",
+      "id": 1
     },
     {
-      "id": 2,
       "userId": 3,
-      "soberDate": null
+      "soberDate": "2017-04-17",
+      "id": 2
     }
   ]
 }

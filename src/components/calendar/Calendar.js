@@ -1,29 +1,103 @@
-import React from "react"
+import React, { useState, useContext, useEffect } from "react"
+import { useHistory } from 'react-router-dom'
+import { CalendarContext } from "./CalendarProvider"
 import "./Calendar.css"
 
-export const Calendar = () => (
-    
-    <section className="calendar">
-        <label for="start">Enter Your 1st Day Sober Here:</label>
 
-<input type="date" id="start" name="trip-start"></input>
-<button>Save Date</button>
-        
-    </section>
-)
 
-// const counterClock = (pass, xxx ) => {
-//     return <div> INSIDE <div/>
-// }
 
-// return ( 
+export const Calendar = () => {
+    const { addCalendar, getCalendars, calendars } = useContext(CalendarContext)
+    const userId = parseInt(localStorage.getItem("sobrli_user"))
 
-// <button onClick={
+const userCalendars = calendars?.filter(c=> c.userId == userId)
 
-// { dateStamp.length ? <div>sekonsekdlm</div> : <></> }
-// { dateStamp.length ? counterClock(passIn, pass) : <></> }
+    const [calendar, setCalendar] = useState({
 
-//         >SUBMIT<button/>)
-// }
+        "userId": 0,
+        "soberDate": ""
+    })
 
-  
+
+    const history = useHistory();
+
+    useEffect(() => {
+        getCalendars()
+    },[])
+
+
+    const handleControlledInputChange = (event) => {
+        const newDate = { ...calendar.soberDate }
+
+        newDate[event.target.id] = event.target.value
+        setCalendar(newDate)
+    }
+
+    const handleClickSaveDate = (event) => {
+        event.preventDefault()
+
+
+
+
+        if (calendar.soberDate === "") {
+            window.alert("Please enter sober date")
+        } else {
+
+            const newSoberDate = {
+                userId: parseInt(localStorage.getItem('sobrli_user')),
+                soberDate: calendar.soberDate
+
+            }
+            addCalendar(newSoberDate).then(() => history.push("/calendars"))
+          
+        }
+    }
+
+
+    // useEffect(() => {
+    //     if(commentId){
+    //         getCommentById(commentId)
+    //     .then(comment => {
+    //         setComment(comment)
+    //         setIsLoading(false)
+    //     })
+    //     } else {
+    //         setIsLoading(false)
+    //     }
+    // }, [])
+    // useEffect(() => {
+    //     getPlants()
+    // },[])
+
+    return (
+        <>
+        <div> dates
+            {calendars.map(c => {
+             
+             return  <p> {c.soberDate}</p>
+            })}
+           </div>
+                {  
+                    userCalendars.length == 0 ? 
+                    
+                    <form className="saveForm">
+                    <h2>Enter Sober Date:</h2>
+                    <input type="date" id="soberDate" name="soberDate" value={calendar.soberDate} onChange={handleControlledInputChange}></input>
+                    <button className="saveDate" type="submit" onClick={handleClickSaveDate}>Post Sober Date</button>
+                </form>
+                
+                :<> </>
+                  
+
+                } 
+                 
+               
+                
+        </>
+    )
+}
+
+
+
+
+

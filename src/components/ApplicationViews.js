@@ -9,6 +9,7 @@ import { SupportBoardList } from "./supportBoard/SupportBoardList"
 import { SupportBoardForm } from "./supportBoard/SupportBoardForm"
 import { SupportBoardDetail } from "./supportBoard/SupportBoardDetail"
 import { SupportBoardProvider } from "./supportBoard/SupportBoardProvider"
+import { CalendarProvider } from "./calendar/CalendarProvider"
 import { MotivationQuote } from "./motivationQuote/MotivationQuote"
 import { Calendar } from "./calendar/Calendar"
 import { Home } from "./home/Home"
@@ -50,9 +51,11 @@ export const ApplicationViews = () => {
                     <MotivationQuote />
                 </Route>
 
-                <Route path= "/calendars">
-                    <Calendar />
-                </Route>
+                <CalendarProvider>
+                    <Route exact path="/calendars">
+                        <Calendar />
+                    </Route>
+                </CalendarProvider>
 
                 
            
