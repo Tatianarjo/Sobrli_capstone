@@ -39,6 +39,18 @@
       "name": "Sydney Sydney",
       "soberDate": null,
       "id": 6
+    },
+    {
+      "email": "anna@anna.com",
+      "name": "Anna Johnson",
+      "soberDate": null,
+      "id": 7
+    },
+    {
+      "email": "pudding@pudding.com",
+      "name": "Pudding Brown",
+      "soberDate": null,
+      "id": 8
     }
   ],
   "moodTrackers": [
@@ -201,6 +213,11 @@
       "userId": 3,
       "soberDate": "2017-04-17",
       "id": 2
+    },
+    {
+      "userId": 7,
+      "soberDate": "1934-10-17",
+      "id": 3
     }
   ]
 }

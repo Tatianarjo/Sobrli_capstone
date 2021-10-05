@@ -54,29 +54,16 @@ const userCalendars = calendars?.filter(c=> c.userId == userId)
     }
 
 
-    // useEffect(() => {
-    //     if(commentId){
-    //         getCommentById(commentId)
-    //     .then(comment => {
-    //         setComment(comment)
-    //         setIsLoading(false)
-    //     })
-    //     } else {
-    //         setIsLoading(false)
-    //     }
-    // }, [])
-    // useEffect(() => {
-    //     getPlants()
-    // },[])
+    
 
     return (
         <>
-        <div> dates
+        <h1 className="title"> Sobriety!
             {calendars.map(c => {
              
              return  <p> {c.soberDate}</p>
             })}
-           </div>
+           </h1>
                 {  
                     userCalendars.length == 0 ? 
                     

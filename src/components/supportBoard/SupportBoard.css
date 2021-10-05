@@ -6,12 +6,11 @@
     
   .supportBoard {
       flex-basis: 28%;
-      margin: 1em;
-      /* padding: 1em; */
-      border: 1px solid goldenrod;
+      margin: 1rem;
+      border: 20px solid rgb(62, 16, 189);
       border-radius: 25px;
       background: salmon;
       padding: 20px; 
       width: 100px;
-      height: 100px;
+      min-height: 100px;
   }
