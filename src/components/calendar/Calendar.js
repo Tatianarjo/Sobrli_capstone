@@ -53,9 +53,6 @@ const userCalendars = calendars?.filter(c=> c.userId == userId)
         }
     }
 
-
-    
-
     return (
         <>
         <h1 className="title"> Sobriety!

@@ -23,8 +23,9 @@ export const MotivationQuote = () => {
     return(
       <>
     <p className="quotes">{quote} </p>
-
+      <div style={{display: "flex", justifyContent: "center"}}>
     <button className="newButton" onClick={config} >New Quote</button>
+      </div>
     </>
     )
 

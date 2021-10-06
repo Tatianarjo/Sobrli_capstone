@@ -51,6 +51,12 @@
       "name": "Pudding Brown",
       "soberDate": null,
       "id": 8
+    },
+    {
+      "email": "brittany@brittany.com",
+      "name": "Brittany G",
+      "soberDate": null,
+      "id": 9
     }
   ],
   "moodTrackers": [
@@ -218,6 +224,11 @@
       "userId": 7,
       "soberDate": "1934-10-17",
       "id": 3
+    },
+    {
+      "userId": 9,
+      "soberDate": "2016-05-17",
+      "id": 4
     }
   ]
 }

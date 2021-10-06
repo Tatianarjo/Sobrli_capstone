@@ -7,8 +7,7 @@
     
   .moodTracker {
       flex-basis: 28%;
-      margin: auto;
-      /* padding: 1em; */
+      margin: 1rem;
       border: 20px solid goldenrod;
       border-radius: 25px;
       background: purple;
