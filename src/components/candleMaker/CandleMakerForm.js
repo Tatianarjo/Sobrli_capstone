@@ -65,10 +65,12 @@ export const CandleMakerForm = () => {
                 <div className="form-group">
                     <label htmlFor="name">Create Your Scent</label>
                     <select name="scent" id="scent" className="form-group" onChange={handleControlledInputChange}>
-                        <option value="happy">Happy</option>
-                        <option value="sad">Sad</option>
-                        <option value="angry">Angry</option>
-                        <option value="all over the place">All Over The Place</option>
+                        <option value="vanillabreeze">Vanilla Breeze</option>
+                        <option value="morroccancashmere">Morroccan Cashmere</option>
+                        <option value="peachcardamon">Peach Cardamon</option>
+                        <option value="daisymusk">Daisy Musk</option>
+                        <option value="cucumbermelon">Cucumber Melon</option>
+                        <option value="cedarwood">Cedar Wood</option>
                     </select>
                     </div>
             </fieldset>
