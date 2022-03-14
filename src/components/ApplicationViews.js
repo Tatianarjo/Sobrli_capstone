@@ -1,9 +1,9 @@
 import React from "react"
 import { Route } from "react-router-dom"
-import { MoodTracker } from "./moodTracker/MoodTracker"
-import { MoodTrackerList } from "./moodTracker/MoodTrackerList"
-import { MoodTrackerForm } from "./moodTracker/MoodTrackerForm"
-import { MoodTrackerProvider } from "./moodTracker/MoodTrackerProvider"
+import { CandleMaker } from "./candleMaker/CandleMaker"
+import { CandleMakerList } from "./candleMaker/CandleMakerList"
+import { CandleMakerForm } from "./candleMaker/CandleMakerForm"
+import { CandleMakerProvider } from "./candleMaker/CandleMakerProvider"
 import { SupportBoard } from "./supportBoard/SupportBoard"
 import { SupportBoardList } from "./supportBoard/SupportBoardList"
 import { SupportBoardForm } from "./supportBoard/SupportBoardForm"
@@ -26,14 +26,14 @@ export const ApplicationViews = () => {
                     <SupportBoard /> */}
                 </Route>
 
-                <MoodTrackerProvider>
-                    <Route exact path="/moodTrackers">
-                        <MoodTrackerList />
+                <CandleMakerProvider>
+                    <Route exact path="/candleMakers">
+                        <CandleMakerList />
                     </Route>
-                    <Route exact path="/moodTrackers/create">
-                        <MoodTrackerForm />
+                    <Route exact path="/candleMakers/create">
+                        <CandleMakerForm />
                     </Route>
-                </MoodTrackerProvider>
+                </CandleMakerProvider>
 
                 <SupportBoardProvider>
                     <Route exact path="/supports">

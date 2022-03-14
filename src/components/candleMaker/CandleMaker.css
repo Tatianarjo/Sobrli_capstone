@@ -1,11 +1,11 @@
-.moodTrackers {
+.candleMakers {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     
   }
     
-  .moodTracker {
+  .candleMaker {
       flex-basis: 28%;
       margin: 1rem;
       border: 20px solid goldenrod;
